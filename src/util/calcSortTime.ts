@@ -1,3 +1,5 @@
+import { checkInOrder } from "./checkInOrder";
+
 export const calSortTime = (
   key: string,
   sortFunction: (target: number[]) => number[],
@@ -8,6 +10,7 @@ export const calSortTime = (
   const end = performance.now();
   const data = {
     key,
+    isSorted: checkInOrder(result),
     result: result.reduce((acc, curr) => {
       if (acc === "") {
         return `${curr}`;
