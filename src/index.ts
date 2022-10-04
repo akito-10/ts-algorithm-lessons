@@ -3,6 +3,7 @@ import { bubble } from "./sort/bubble";
 import { cocktail } from "./sort/cocktail";
 import { comb } from "./sort/comb";
 import { gnome } from "./sort/gnome";
+import { insertion } from "./sort/insertion";
 import { selection } from "./sort/selection";
 import { calSortTime } from "./util/calcSortTime";
 
@@ -20,4 +21,5 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("cocktail", cocktail, testArray);
 // calSortTime("comb", comb, testArray);
 // calSortTime("selection", selection, testArray);
-calSortTime("gnome", gnome, testArray);
+// calSortTime("gnome", gnome, testArray);
+calSortTime("insertion", insertion, testArray);
