@@ -14,5 +14,3 @@ export const insertion = (array: number[]) => {
 
   return targetArray;
 };
-
-// [2, 1, 7, 4]
