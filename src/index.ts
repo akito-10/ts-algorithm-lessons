@@ -1,5 +1,6 @@
 import { bogo } from "./sort/bogo";
 import { bubble } from "./sort/bubble";
+import { bucket } from "./sort/bucket";
 import { cocktail } from "./sort/cocktail";
 import { comb } from "./sort/comb";
 import { gnome } from "./sort/gnome";
@@ -22,4 +23,5 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("comb", comb, testArray);
 // calSortTime("selection", selection, testArray);
 // calSortTime("gnome", gnome, testArray);
-calSortTime("insertion", insertion, testArray);
+// calSortTime("insertion", insertion, testArray);
+calSortTime("bucket", bucket, testArray);
