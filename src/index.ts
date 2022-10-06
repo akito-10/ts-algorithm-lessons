@@ -6,6 +6,7 @@ import { comb } from "./sort/comb";
 import { gnome } from "./sort/gnome";
 import { insertion } from "./sort/insertion";
 import { selection } from "./sort/selection";
+import { shell } from "./sort/shell";
 import { calSortTime } from "./util/calcSortTime";
 
 const TEST_NUMBER_RANGE = 100;
@@ -24,4 +25,5 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("selection", selection, testArray);
 // calSortTime("gnome", gnome, testArray);
 // calSortTime("insertion", insertion, testArray);
-calSortTime("bucket", bucket, testArray);
+// calSortTime("bucket", bucket, testArray);
+calSortTime("shell", shell, testArray);
