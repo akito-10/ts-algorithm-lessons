@@ -3,6 +3,7 @@ import { bubble } from "./sort/bubble";
 import { bucket } from "./sort/bucket";
 import { cocktail } from "./sort/cocktail";
 import { comb } from "./sort/comb";
+import { counting } from "./sort/counting";
 import { gnome } from "./sort/gnome";
 import { insertion } from "./sort/insertion";
 import { selection } from "./sort/selection";
@@ -26,4 +27,5 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("gnome", gnome, testArray);
 // calSortTime("insertion", insertion, testArray);
 // calSortTime("bucket", bucket, testArray);
-calSortTime("shell", shell, testArray);
+// calSortTime("shell", shell, testArray);
+calSortTime("counting", counting, testArray);
