@@ -6,6 +6,7 @@ import { comb } from "./sort/comb";
 import { counting } from "./sort/counting";
 import { gnome } from "./sort/gnome";
 import { insertion } from "./sort/insertion";
+import { merge } from "./sort/merge";
 import { quick } from "./sort/quick";
 import { radix } from "./sort/radix";
 import { selection } from "./sort/selection";
@@ -32,4 +33,5 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("shell", shell, testArray);
 // calSortTime("counting", counting, testArray);
 // calSortTime("radix", radix, testArray);
-calSortTime("quick", quick, testArray);
+// calSortTime("quick", quick, testArray);
+calSortTime("merge", merge, testArray);
