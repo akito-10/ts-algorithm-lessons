@@ -1,3 +1,5 @@
+import { binary } from "./search/binary";
+import { binaryByRecursive } from "./search/binaryByRecursive";
 import { linear } from "./search/linear";
 import { bogo } from "./sort/bogo";
 import { bubble } from "./sort/bubble";
@@ -37,4 +39,11 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("radix", radix, testArray);
 // calSortTime("quick", quick, testArray);
 // calSortTime("merge", merge, testArray);
-calcSearchTime("linear", linear, comb(testArray), testArray[4]);
+// calcSearchTime("linear", linear, comb(testArray), testArray[4]);
+// calcSearchTime("binary", binary, comb(testArray), testArray[4]);
+calcSearchTime(
+  "binaryByRecursive",
+  binaryByRecursive,
+  comb(testArray),
+  testArray[4]
+);
