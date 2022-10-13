@@ -1,3 +1,4 @@
+import { linear } from "./search/linear";
 import { bogo } from "./sort/bogo";
 import { bubble } from "./sort/bubble";
 import { bucket } from "./sort/bucket";
@@ -11,6 +12,7 @@ import { quick } from "./sort/quick";
 import { radix } from "./sort/radix";
 import { selection } from "./sort/selection";
 import { shell } from "./sort/shell";
+import { calcSearchTime } from "./util/calcSearchTime";
 import { calSortTime } from "./util/calcSortTime";
 
 const TEST_NUMBER_RANGE = 100;
@@ -34,4 +36,5 @@ const testArray = Array(TEST_NUMBER_QUANTITY)
 // calSortTime("counting", counting, testArray);
 // calSortTime("radix", radix, testArray);
 // calSortTime("quick", quick, testArray);
-calSortTime("merge", merge, testArray);
+// calSortTime("merge", merge, testArray);
+calcSearchTime("linear", linear, comb(testArray), testArray[4]);
